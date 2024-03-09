@@ -35,7 +35,7 @@ Users should be able to:
 
 
 - Solution URL: [ newsletter-sign_up](https://github.com/Ezekiel-Great/newsletter-sign-up_main)
-- Live Site URL: [newsletter-sign_up Live site URL](https://your-live-site-url.com)
+- Live Site URL: [newsletter-sign_up Live site URL](https://github.com/Ezekiel-Great/newsletter-sign-up_main.github.io)
 
 
 
