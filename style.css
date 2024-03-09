@@ -1,0 +1,209 @@
+/* mobile view first */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --D-S-G: hsl(234, 29%, 20%);
+  --C-G: hsl(235, 18%, 26%);
+  --G: hsl(231, 7%, 60%);
+  --W: hsl(0, 0%, 100%);
+  --F-S: 16px;
+}
+
+@font-face {
+  src: url(assets/fonts/Roboto-Bold.ttf), url(assets/fonts/Roboto-Regular.ttf);
+  font-family: "Roboto";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+main .container {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.container > h1 {
+  font-size: 4rem;
+}
+.container p {
+  font-size: var(--F-S);
+  color: var(--C-G);
+}
+.container .main_updates {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main_updates .lists {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form .label {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+form input {
+  width: 90%;
+  height: 50px;
+  border-radius: 8px;
+  /* border: none; */
+}
+form #e-mail {
+  margin-bottom: 20px;
+  padding-left: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Add this to your CSS file */
+.error {
+  background: rgb(243, 209, 209);
+  border: 1px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+
+form #label-mail {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+form #error-msg {
+  color: var(--Tomato);
+  visibility: hidden;
+}
+
+form #button {
+  background-color: var(--D-S-G);
+  color: var(--W);
+  font-size: var(--F-S);
+  border-style: none;
+  margin-bottom: 40px;
+  width: 90%;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background: linear-gradient(to right, rgb(166, 89, 101), rgb(218, 71, 18));
+}
+
+.success-msg_page {
+  background-color: var(--W);
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 10%;
+  text-align: left;
+  gap: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.success-msg_page h1 {
+  font-size: 3rem;
+  width: 80%;
+  line-height: 0.95;
+}
+
+.success-msg_page p {
+  font-size: var(--F-S);
+  color: var(--D-S-G);
+  width: 85%;
+}
+p strong {
+  color: black;
+}
+
+.success-msg_page button {
+  width: 85%;
+  height: 55px;
+  background: var(--D-S-G);
+  color: var(--W);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: var(--F-S);
+  border-radius: 10px;
+  margin-top: 150px;
+}
+
+.success-msg_page button:hover {
+  box-shadow: 10px 0px 30px var(--Tomato);
+  background: var(--Tomato);
+}
+
+/* Desktop view */
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--C-G);
+    height: 100%;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    height: 60%;
+    background: var(--W);
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  }
+
+  .success-msg_page {
+    width: 40%;
+    padding-left: 50px;
+    height: unset;
+    height: 450px;
+  }
+
+  .success-msg_page h1 {
+    font-size: 3.5rem;
+    width: 60%;
+    line-height: 0.95;
+  }
+
+  .success-msg_page p {
+    width: 80%;
+  }
+
+  .success-msg_page button {
+    height: 40px;
+    margin-top: 0;
+  }
+
+  @media (height>=650px) {
+    main {
+      margin: 50px 0 50px 0;
+    }
+  }
+}

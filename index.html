@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    
+  </head>
+  <body>
+    <main>
+      <picture>
+        <source
+          media="(min-width:600px)"
+          srcset="assets/images/illustration-sign-up-desktop.svg"
+        />
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          alt="sign-up_img"
+          style="width: 100%"
+        />
+      </picture>
+
+      <div class="container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="main_updates">
+          <div class="lists one">
+            <img src="assets/images/icon-list.svg" alt="lists" />
+            <p>Product discovery and building what matters</p>
+          </div>
+
+          <div class="lists two">
+            <img src="assets/images/icon-list.svg" alt="lists" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+
+          <div class="lists three">
+            <img src="assets/images/icon-list.svg" alt="lists" />
+            <p>And much more!</p>
+          </div>
+        </div>
+
+        <form novalidate >
+          <div class="label">
+            <label for="e-mail" id="label-mail">Email address</label>
+            <label id="error-msg">Valid email required</label>
+          </div>
+
+          <input
+            type="email"
+            name="e-mail"
+            id="e-mail"
+            placeholder="email@company.com"
+          />
+
+          <button id="button">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
